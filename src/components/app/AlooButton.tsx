@@ -13,9 +13,12 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { getSize } from "@utils/reponsive.utils";
 import { Text } from "react-native-paper";
 import { useAppTheme } from "@configs/theme/theme.config";
+import { useAppDispatch } from "@redux/store";
+import { setAppSheets } from "@redux/slices/app.slice";
 
 export const AlooButton = ({ repeat }) => {
   const animation = useSharedValue(0);
+  const dispatch = useAppDispatch();
   const { colors } = useAppTheme();
   useEffect(() => {
     animation.value = withDelay(
@@ -65,6 +68,12 @@ export const AlooButton = ({ repeat }) => {
           justifyContent: "center",
           borderRadius: getSize.m(60),
           borderBottomRightRadius: getSize.m(30)
+        }}
+        activeOpacity={.8}
+        onPress={() => {
+          dispatch(setAppSheets({
+            createMeeting: true
+          }));
         }}
       >
         <Text

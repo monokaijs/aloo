@@ -8,6 +8,7 @@ import { Provider as PaperProvider } from "react-native-paper";
 import { persistor, store, useAppDispatch } from "@redux/store";
 import { lightTheme } from "@configs/theme/theme.config";
 import { MainStackNavigation } from "@navigations/MainStackNavigation";
+import { CreateMeetingSheet } from "@components/app/CreateMeetingSheet";
 
 if (Platform.OS === "android" && UIManager.setLayoutAnimationEnabledExperimental) {
   UIManager.setLayoutAnimationEnabledExperimental(true);
@@ -35,6 +36,7 @@ const AppInner = () => {
             backgroundColor="transparent"
           />
           <MainStackNavigation />
+          <CreateMeetingSheet/>
         </NavigationContainer>
       </PaperProvider>
     </GestureHandlerRootView>
