@@ -1,4 +1,4 @@
-package com.aloo;
+package com.nstudio.aloo;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
