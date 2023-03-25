@@ -1,4 +1,4 @@
-package com.nstudio.aloo;
+package vn.northstudio.aloo;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

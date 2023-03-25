@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.nstudio.aloo"
+    namespace "vn.northstudio.aloo"
     defaultConfig {
-        applicationId "com.nstudio.aloo"
+        applicationId "vn.northstudio.aloo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
